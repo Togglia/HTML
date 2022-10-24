@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta   charset="UTF-8">
+    <meta   name="viewport" 
+            content="width=device-width; 
+                    initial-scale=1.0
+                    user-scalable = no" /> <!--메타 태그를 이용한 뷰포트 선언-->
+
+    <!--CDN 방식 : 파일을 직접 다운받지 않고 제이쿼리 모바일 서버의 URL 주소만 마크업에 명세함으로써 프레임워크가 적용될 때 참조하는 방식(단,온라인상태)-->
+    <link   rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />  <!--css3 스타일 파일-->
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>                              <!--jQuery 기본 클래스 정의 라이브러리파일-->
+    <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>              <!--jQuery모바일 자바스크립트 라이브러리-->
+
+    <title>jQuery Moblie</title>     <!--jQuery(js 라이브러리)를 확장한 프레임워크-->
+
+    </head>
+<body>
+<!-----------------------------------------------------첫번째 페이지----------------------------------------------------------------->
+    <div data-role="page" data-fullscreen="true" id="page1" data-add-back-btn="true" >
+    <!--data-role="page"         페이지 컨테이너 생성-->
+    <!--data-fullscreen="true"   클릭시 툴바를 숨기거나 보이게 할 수 있음-->    
+
+        <div data-role="header" data-position ="fixed"> <!--헤더바 생성-->
+            <h1>페이지제목</h1>
+            <div data-role="navbar"> <!--'수평 버튼 바' 모양으로 만들어주는 버튼 그룹-->
+                <ul>
+                    <li><a href="#page2" class="ui-btn-active ui-state-persist">page2</a></li>
+                    <li><a href="#page3" >page3</a></li>
+                    <li><a href="#page4" >page4</a></li>
+                </ul>
+            </div>
+            <a href="#page2" class="ui-btn-right">페이지2</a> <!--헤더바 오른쪽 버튼-->
+        </div>
+
+        <div data-role="content">
+            <p>content</p>
+            <h1>첫번째 페이지</h1>
+            <a href="http://www.naver.com">네이버가기</a>
+        </div>
+
+        <div data-role="footer" data-id="footerid1" data-position ="fixed" class="ui-bar"><!--푸터바 생성-->
+            <!--data-position ="fixed" -> 화면 맨위 와 맨 밑 고정-->
+            <div data-role="controlgroup" data-type="horizontal"><!--버튼 공백 제거-->
+            <a href="#page1">바 버튼1</a>
+            <a href="#page2">바 버튼2</a>
+            <a href="#page3">바 버튼3</a>
+            </div>
+            <h2>페이지꼬리말</h2>
+        </div>
+    </div>
+<!-----------------------------------------------------두번째 페이지----------------------------------------------------------------->
+    <div data-role="page" data-fullscreen="true" id="page2" data-add-back-btn="true" >
+        <!--data-fullscreen="true" -> 클릭시 툴바를 숨기거나 보이게 할 수 있음-->    
+            <div data-role="header" data-position ="fixed">
+                <h1>페이지제목2</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#page1" class="ui-btn-active ui-state-persist">page1</a></li>
+                        <li><a href="#page3" >page3</a></li>
+                        <li><a href="#page4" >page4</a></li>
+                    </ul>
+                </div>
+                <a href="#page3" class="ui-btn-right">페이지3</a>
+            </div>
+
+            <div data-role="content">
+                <p>content</p>
+                <h1>두번째 페이지</h1>
+            </div>
+
+            <div data-role="footer" data-id="footerid1"data-position ="fixed" class="ui-bar">
+                <!--data-position ="fixed" -> 화면 맨위 와 맨 밑 고정-->
+                <div data-role="controlgroup" data-type="horizontal"><!--버튼 공백 제거-->
+                <a href="#page1">바 버튼1</a>
+                <a href="#page2">바 버튼2</a>
+                <a href="#page3">바 버튼3</a>
+                </div>
+                <h2>페이지꼬리말</h2>
+            </div>
+    </div>
+<!------------------------------------------------------세번째 페이지----------------------------------------------------------------->
+    <div data-role="page" data-fullscreen="true" id="page3" data-add-back-btn="true" >
+        <!--data-fullscreen="true" -> 클릭시 툴바를 숨기거나 보이게 할 수 있음-->    
+            <div data-role="header" data-position ="fixed">
+                <h1>페이지제목3</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#page1" class="ui-btn-active ui-state-persist">page1</a></li>
+                        <li><a href="#page2" >page3</a></li>
+                        <li><a href="#page4" >page4</a></li>
+                    </ul>
+                </div>
+                <a href="#page1" class="ui-btn-right">페이지1</a>
+            </div>
+
+            <div data-role="content">
+                <p>content</p>
+                <h1>세번째 페이지</h1>
+            </div>
+            
+            <div data-role="footer" data-id="footerid1"data-position ="fixed" class="ui-bar">
+                <!--data-position ="fixed" -> 화면 맨위 와 맨 밑 고정-->
+                <div data-role="controlgroup" data-type="horizontal"><!--버튼 공백 제거-->
+                <a href="#page1">바 버튼1</a>
+                <a href="#page2">바 버튼2</a>
+                <a href="#page3">바 버튼3</a>
+                </div>
+                <h2>페이지꼬리말</h2>
+            </div>        
+    </div>
+</body>
+</html>
